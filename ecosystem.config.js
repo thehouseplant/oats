@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: 'node-express-starter',
+      name: 'oats',
       script: 'dist/server.js',
       instances: 'max',
       exec_mode: 'cluster',
