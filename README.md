@@ -1,22 +1,6 @@
-# Node Express Starter
+# Open Asset Tracking System (OATS)
 
-A sample project to get started with a modern Node.js Express API.
-
-## Features
-
-- [x] Strong type safety (TypeScript)
-- [x] Async/await
-- [x] Linting and code styling (`eslint` and `prettier`)
-- [x] Default ecurity configuration (`helmet`)
-- [x] PostgreSQL support (`pg`)
-- [x] Data caching (Redis and `ioredis`)
-- [x] Process management (`pm2`)
-- [x] Structured logging (`winston`)
-- [x] Rate limiting (`express-rate-limit`)
-- [x] CORS support (`cors`)
-- [ ] Request tracing (OpenTelemetry)
-- [ ] Unit testing coverage
-- [x] Load testing coverage (`k6`)
+An open source asset and inventory tracking system for your small business.
 
 ## Requirements
 

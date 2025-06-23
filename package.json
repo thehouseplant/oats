@@ -1,7 +1,7 @@
 {
-  "name": "express-starter",
+  "name": "oats",
   "version": "1.0.0",
-  "description": "A sample project to get started with a modern Node.js Express API",
+  "description": "Open Asset Tracking System (OATS)",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/server.ts",
@@ -17,22 +17,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thehouseplant/node-express-starter.git"
+    "url": "git+https://github.com/thehouseplant/oats.git"
   },
   "keywords": [
-    "node",
-    "nodejs",
-    "express",
-    "expressks",
-    "typescript"
+    "asset",
+    "asset-management",
+    "asset-tracking",
+    "inventory",
+    "inventory-management",
+    "inventory-tracking"
   ],
   "author": "Sean Collins <sean.collins@outlook.com>",
   "license": "MIT",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/thehouseplant/node-express-starter/issues"
+    "url": "https://github.com/thehouseplant/oats/issues"
   },
-  "homepage": "https://github.com/thehouseplant/node-express-starter#readme",
+  "homepage": "https://github.com/thehouseplant/oats#readme",
   "dependencies": {
     "@opentelemetry/api": "^1.9.0",
     "@opentelemetry/auto-instrumentations-node": "^0.60.1",
