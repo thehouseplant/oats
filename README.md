@@ -14,7 +14,7 @@ An open source asset and inventory tracking system for your small business.
 
 ```zsh
 # Clone the repository
-git clone git@github.com:thehouseplant/node-express-starter
+git clone git@github.com:thehouseplant/oats
 
 # Install the dependencies
 npm install
