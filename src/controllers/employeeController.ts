@@ -60,7 +60,7 @@ export const getEmployees = async (req: Request, res: Response, next: NextFuncti
     }
 
     // If not in the cache, fetch from Postgres
-    const result = await pool.query('SELECT id, name, title FROM employees');
+    const result = await pool.query('SELECT id, name, title FROM employees ORDER BY id ASC');
     const employees: Employee[] = result.rows;
 
     // Store results in cache
