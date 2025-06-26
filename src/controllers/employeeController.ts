@@ -19,13 +19,26 @@ export const createEmployee = async (req: Request, res: Response, next: NextFunc
   const requestId = (req as any).requestId;
 
   try {
-    const { name, title } = req.body;
+    const {
+      name,
+      title,
+      email,
+      address,
+      phone,
+      organization,
+      department,
+      office,
+      status,
+      pay
+    } = req.body;
     const pool = getPool(res);
     const redisClient = getRedisClient(res);
 
     const result = await pool.query(
-      'INSERT INTO employees (name, title) VALUES ($1, $2) RETURNING id, name, title',
-      [name, title]
+      `INSERT INTO employees (name, title, email, address, phone, organization, department, office, status, pay)
+      VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)
+      RETURNING id, name, title, email, address, phone, organization, department, office, status, pay`,
+      [name, title, email, address, phone, organization, department, office, status, pay]
     );
     const newEmployee: Employee = result.rows[0];
 
