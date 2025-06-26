@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import { employees, Employee } from '../models/employee';
+import { Employee } from '../models/employee';
 import { Pool } from 'pg';
 import Redis from 'ioredis';
 import logger from '../utils/logger';
