@@ -48,7 +48,9 @@ const config: Config = {
     message: process.env.RATE_LIMIT_MESSAGE || 'Too many requests from this IP address, please try again later',
   },
   cors: {
-    allowedOrigins: process.env.CORS_ALLOWED_ORIGINS ? process.env.CORS_ALLOWED_ORIGINS.split(',') : ['http://localhost:3000'],
+    allowedOrigins: process.env.CORS_ALLOWED_ORIGINS
+      ? process.env.CORS_ALLOWED_ORIGINS.split(',')
+      : ['http://localhost:3000', 'http://localhost:5173'],
   },
 };
 
