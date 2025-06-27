@@ -10,21 +10,45 @@ interface EmployeeFormProps {
 export default function EmployeeForm({ onSubmit, onClose, initialData }: EmployeeFormProps) {
   const [name, setName] = useState('');
   const [title, setTitle] = useState('');
+  const [email, setEmail] = useState('');
+  const [address, setAddress] = useState('');
+  const [phone, setPhone] = useState('');
+  const [organization, setOrganization] = useState('');
+  const [department, setDepartment] = useState('');
+  const [office, setOffice] = useState('');
+  const [status, setStatus] = useState('');
+  const [pay, setPay] = useState('');
 
   // If initialData is provided (for editing), populate the form fields
   useEffect(() => {
     if (initialData) {
       setName(initialData.name);
       setTitle(initialData.title);
+      setEmail(initialData.email);
+      setAddress(initialData.address);
+      setPhone(initialData.phone);
+      setOrganization(initialData.organization);
+      setDepartment(initialData.department);
+      setOffice(initialData.office);
+      setStatus(initialData.status);
+      setPay(initialData.pay);
     } else {
       setName('');
       setTitle('');
+      setEmail('');
+      setAddress('');
+      setPhone('');
+      setOrganization('');
+      setDepartment('');
+      setOffice('');
+      setStatus('');
+      setPay('');
     }
   }, [initialData]);
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    onSubmit({ name, title });
+    onSubmit({ name, title, email, address, phone, organization, department, office, status, pay });
   };
 
   return (
